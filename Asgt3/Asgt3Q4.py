@@ -29,7 +29,7 @@ df.head()
 # In[4]:
 
 # Regula exp to catch groups for finding special awards and nominations as well as simple awards and nominations
-regex_pattern = re.compile('^((Won? (\d+) (\w*(\s\w*)*)( & )?)?(Nominated for? (\d+) (\w*(\s\w*)*))?\u002e\s?)?(((Another )?((\d+) win\w?)( & )?)?((\d+) nomination\w?)?\u002e)?$')
+regex_pattern = re.compile('^((Won? (\d+) (\w*(\s\w*)*)( & )?)?(Nominated for? (\d+) (\w*(\s\w*)*))?\u002e\s?)?((Another )?(((\d+) win\w?)( & )?)?((\d+) nomination\w?)?\u002e)?$')
 
 
 # In[5]:
@@ -57,10 +57,14 @@ def awards_nom(row):
         simple_award_wins = match_result.group(15)
         if simple_award_wins:
             row['Awards_Won'] = simple_award_wins
+            if award_wins:
+                row['Awards_Won'] = int(row['Awards_Won']) + int(award_wins)
 
         simple_nom = match_result.group(18)
         if simple_nom:
             row['Awards_Nominated'] = simple_nom
+            if award_nomination:
+                row['Awards_Nominated'] = int(row['Awards_Nominated']) + int(award_nomination)
     return row  
 
 
