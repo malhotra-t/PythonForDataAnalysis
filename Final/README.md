@@ -53,5 +53,16 @@ In MA, Raytheon(for defense) and GE(for energy) turn out to be the major vendors
 In PA, Bechtel Group Inc(largest construction and civil engineering company in the United States) emerges as the vendor with maximum contracts. Amerisourcebergen Corp.(world's largest pharmaceutical sourcing and distribution services companies) comes next, followed by Boeing(manufacturing rockets, aircrafts and satellites worldwide).
 
 #### Analysis 2:
+This analyses the level of vendor competition in Govt. contracts and highlights the companies which reap the benefits of being in a monopoly situation. Here I have first plotted a chart to show the average amount spent towards such companies who are getting govt. contracts without any competition. This depiction is based on the value of field 'ExtentCompeted' in the data files. The values of this parameter are given below:<br>
+- G = Not Competed under SAP
+- F = Competed under SAP
+- D = Full and Open Competition after exclusion of sources
+- C = Not Competed
+- B = Not Available for Competition
+- A = Full and Open Competition
+- CDO = Competitive Delivery Order
+![](Analysis/Analysis2/CompetitionOpennessDistribution.png)
+The plot shows that majority of govt. spending goes into such companies. Also, the word cloud shown below highlights the names of these companies.<br>
+![](Analysis/Analysis2/WordCloud.png)
 
 #### Analysis 3:
