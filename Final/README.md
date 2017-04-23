@@ -4,36 +4,36 @@ In this submission, I have done analysis on the data downloded from US governmen
 This folder contains 2 iPython notebooks:<br>
 #### i) US Spending - Fetch Data: 
 This notebook contains code to make calls to API of US government website. This API provides us with multiple ways of making requests for data based on different parameters and the level of details we want. I have used the link 'https://www.usaspending.gov/fpds/fpds.php?detail=b&fiscal_year=2015&stateCode=TX&max_records=10' which has the following parameters:
-- detail=b: 
+- __detail=b:__ 
 This signifies that level of detail is 'basic'
-- fiscal_year=2015: 
+- __fiscal_year=2015:__ 
 This takes the year for which we want the data. I have taken the data for 2016 & 2017.
-- stateCode=TX: 
+- __stateCode=TX:__ 
 This takes as input the state code for which we want the data. I have requested the data for states MA and PA.
-- max_records=10: 
-This is the number of records per file. I set it to 100 per file.
-In this notebook there are 2 functions followed by the funtion call. The first function is to find out the total number of records for a particular set of parameters passed in the above link. The second function uses this total number of records to find out the number of files that will be downloaded by dividing it by 100(max_records). Using these functions iteratively I create a directory structure of the form 'year/stateCode/file.xml' to save the files for year 2016 & 2017 for states MA & PA.
+- __max_records=10:__ 
+This is the number of records per file. I set it to __100__ per file.
+In this notebook there are 2 functions followed by the funtion call. The first function is to find out the total number of records for a particular set of parameters passed in the above link. The second function uses this total number of records to find out the number of files that will be downloaded by dividing it by 100(max_records). Using these functions iteratively I create a directory structure of the form __'year/stateCode/file.xml'__ to save the files for year 2016 & 2017 for states MA & PA.
 
 #### ii) ConvertXmlToDataFramePickle: 
-Once the data was downloaded into a directory structure, I converted the data in XML files into a dataframe and then saved the dataframe as a __'.pickle' file__ which could be easily used for further analysis without going over 1.3GB of data again and again. 
+Once the data was downloaded into a directory structure, I converted the data in XML files into a dataframe and then saved the dataframe as a __'.pickle' file__ which could be easily used for further analysis without going over __1.3GB__ of data again and again. 
 
 ### 2. Data:
-This folder contains 2 folders for years 2016 and 2017. Each of these folders further contain 2 folders for states MA and PA which have all the XML files. 
+This folder contains 2 folders for years 2016 and 2017. Each of these folders further contain 2 folders for states MA and PA which have all the XML files. For example, __'Data/2016/MA'__.
 
 ### 3. Extra:
-This folder contains the US govt. website's data dictionary in the form of a pdf file (USAspending.govDataDictionary.pdf) which explains terminology used in the XML files in the form of tags. It also contains image of the error encountered while uploading the xml files for PA for year 2016. Total number of files for this folder was 4,984. However, Github limits the number to 1000. 
+This folder contains the US Govt. website's data dictionary in the form of a pdf file __(USAspending.govDataDictionary.pdf)__ which explains terminology used in the XML files in the form of tags. It also contains image of the error encountered while uploading the xml files for PA for year 2016. Total number of files for this folder was __4,984__. However, Github limits the number to __1000__. 
 
 ### 4. Analysis:
 
 #### Please Note (Instructions to run Analysis notebooks):
-The pickle file created in 'FetchData' step has not been committed on GitHub due to size restrictions as Github only allows files of size upto 100MB. This size of this file was 405MB. In order to run the analysis again using this pickle file, you need to download it from here (https://drive.google.com/open?id=0B2s5uRu_aLx3SFN1aUVmNXFoZk0) and save it at this path in your system __(Final/Extra/us_spending_df.pickle)__.
+The pickle file created in 'FetchData' step has not been committed on GitHub due to size restrictions as Github only allows files of size upto __100MB__. This size of this file was __405MB__. In order to run the analysis again using this pickle file, you need to download it from here __(https://drive.google.com/open?id=0B2s5uRu_aLx3SFN1aUVmNXFoZk0)__ and save it at this path in your system __(Final/Extra/us_spending_df.pickle)__.
 
-Analysis folder consists of 3 analysis done of the pickle file created in the above steps. Also, it consists of addtional folders for each analysis consisting of images of the graphs plotted for each one of them.
+Analysis folder consists of __3__ analysis done on the pickle file created in above steps. Also, it consists of 3 addtional folders for each analysis consisting of __images of the graphs__ plotted for each one of them.
 #### Analysis 1:
 This shows the distribution of US govt. spendings across different:<br> 
 #### a) Departments in MA and PA:<br>
 Apart from Dept of Defense(9700) which comes out to be the major expense of the US govt. in both the states, the next most expensive channels turn out to be:<br>
-State - MA<br>
+__State - MA__<br>
 1.United States Mint(2044): Responsible for circulating coinage for US.<br>
 2.Dept of Veterans Affair(3600): This is a govt-run military veteran benfit system.<br>
 3.NASA(8000)<br>
@@ -41,7 +41,7 @@ State - MA<br>
 5.Agency for International Development(7200): Responsible for administering civilian foreign aid.<br><br>
 ![](Analysis/Analysis1/DeptDistributionPlot_MA.png)
 ![](Analysis/Analysis1/DeptDistributionPlot_PA.png)
-State - PA<br>
+__State - PA__<br>
 1.Dept of Energy(8900): This dept concerns with the US's policies regarding energy and safety in handling nuclear material.<br>
 2.Dept of Veterans Affair(3600): This is a govt-run military veteran benfit system.<br>
 3.Dept of Education(9100)<br>
