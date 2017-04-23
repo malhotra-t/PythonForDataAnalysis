@@ -23,7 +23,7 @@ This pickle file has not been committed on GitHub due to size restrictions as Gi
 This folder contains 2 folders for years 2016 and 2017. Each of these folders further contain 2 folders for states MA and PA which have all the XML files. 
 
 ### 3. Extra:
-This folder contains the US govt. website's data dictionary in the form of a pdf file (USAspending.govDataDictionary.pdf) which explains terminology used in the XML files in the form of tags.  
+This folder contains the US govt. website's data dictionary in the form of a pdf file (USAspending.govDataDictionary.pdf) which explains terminology used in the XML files in the form of tags. It also contains image of the error encountered while uploading the xml files for PA for year 2016. Total number of files for this folder was 4,984. However, Github limits the number to 1000. 
 
 ### 4. Analysis:
 This folder consists of 3 analysis done of the pickle file created in the above steps. Also, it consists of addtional folders for each analysis consisting of images of the graphs plotted for each one of them.
