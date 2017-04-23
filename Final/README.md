@@ -17,7 +17,7 @@ In this notebook there are 2 functions followed by the funtion call. The first f
 #### ii) ConvertXmlToDataFramePickle: 
 Once the data was downloaded into a directory structure, I converted the data in XML files into a dataframe and then saved the dataframe as a '.pickle' file which could be easily used for further analysis without going over 1.3GB of data again and again. 
 #### Please Note:
-This pickle file has not been committed on GitHub due to size restrictions as Github only allows files of size upto 100MB. This size of this file was 405MB. In order to run the analysis again using this pickle file, you need to download it from here (https://drive.google.com/open?id=0B2s5uRu_aLx3SFN1aUVmNXFoZk0) and save it at this path in your system (Final/Extra/us_spending_df.pickle).
+This pickle file has not been committed on GitHub due to size restrictions as Github only allows files of size upto 100MB. This size of this file was 405MB. In order to run the analysis again using this pickle file, you need to download it from here (https://drive.google.com/open?id=0B2s5uRu_aLx3SFN1aUVmNXFoZk0) and save it at this path in your system __(Final/Extra/us_spending_df.pickle)__.
 
 ### 2. Data:
 This folder contains 2 folders for years 2016 and 2017. Each of these folders further contain 2 folders for states MA and PA which have all the XML files. 
