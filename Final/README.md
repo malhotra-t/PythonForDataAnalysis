@@ -68,3 +68,6 @@ The plot shows that majority of govt. spending goes into such companies. Also, t
 ![](Analysis/Analysis2/WordCloud.png)<br>
 
 #### Analysis 3:
+This analysis shows the time series analysis of government's spending towards Defense vs Non-Defense sectors.<br>
+A pivot table was created to identify departments as defense and non-defense against each contract sign date. Finally a time series graph was plotted which shows that that govt. spending was always been more towards the 'Defense' sector in 2016 which is good for the country's safety. But they also need to spend towards people's welfare by contributing in non-defense sector.<br>
+![](Analysis/Analysis3/TimeSeriesComparison.png)<br>
