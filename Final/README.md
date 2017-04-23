@@ -28,6 +28,26 @@ This folder contains the US govt. website's data dictionary in the form of a pdf
 ### 4. Analysis:
 This folder consists of 3 analysis done of the pickle file created in the above steps. Also, it consists of addtional folders for each analysis consisting of images of the graphs plotted for each one of them.
 #### Analysis 1:
+This shows the distribution of US govt. spendings across different:<br> 
+- Departments in MA and PA:
+Apart from Dept of Defense(9700) which comes out to be the major expense of the US govt. in both the states, the next most expensive channels turn out to be:
+State - MA
+1.United States Mint(2044): Responsible for circulating coinage for US.
+2.Dept of Veterans Affair(3600): This is a govt-run military veteran benfit system.
+3.NASA(8000)
+4.Federal Aviation Administration(6920)
+5.Agency for International Development(7200): Responsible for administering civilian foreign aid.
+
+State - PA
+1.Dept of Energy(8900): This dept concerns with the US's policies regarding energy and safety in handling nuclear material.
+2.Dept of Veterans Affair(3600): This is a govt-run military veteran benfit system.
+3.Dept of Education(9100)
+4.Centers for Medicare and Medicaid Services(7530): Federal agency that administers the Medicare program and works in partnership with state governments to administer Medicaid, the State Children's Health Insurance Program (SCHIP), and health insurance portability standards.
+5.Centers for Disease Control and Prevention(7523): Responsible for protecting public health and safety through the control and prevention of disease, injury, and disability in the US and internationally.
+
+- Vendors in the states MA and PA:
+In MA, Raytheon(for defense) and GE(for energy) turn out to be the major vendors. Next comes the education sector where MIT turns out to be the major vendor in providing ivy league education in MA. 
+In PA, Bechtel Group Inc(largest construction and civil engineering company in the United States) emerges as the vendor with maximum contracts. Amerisourcebergen Corp.(world's largest pharmaceutical sourcing and distribution services companies) comes next, followed by Boeing(manufacturing rockets, aircrafts and satellites worldwide).
 
 #### Analysis 2:
 
