@@ -37,7 +37,8 @@ State - MA<br>
 3.NASA(8000)<br>
 4.Federal Aviation Administration(6920)<br>
 5.Agency for International Development(7200): Responsible for administering civilian foreign aid.<br><br>
-
+![](Analysis/Analysis1/DeptDistributionPlot_MA.png)
+![](Analysis/Analysis1/DeptDistributionPlot_PA.png)
 State - PA<br>
 1.Dept of Energy(8900): This dept concerns with the US's policies regarding energy and safety in handling nuclear material.<br>
 2.Dept of Veterans Affair(3600): This is a govt-run military veteran benfit system.<br>
@@ -47,6 +48,8 @@ State - PA<br>
 
 #### b) Vendors in the states MA and PA:<br>
 In MA, Raytheon(for defense) and GE(for energy) turn out to be the major vendors. Next comes the education sector where MIT turns out to be the major vendor in providing ivy league education in MA.<br>
+![](Analysis/Analysis1/VendorDistributionPlot_MA.png)
+![](Analysis/Analysis1/VendorDistributionPlot_PA.png)
 In PA, Bechtel Group Inc(largest construction and civil engineering company in the United States) emerges as the vendor with maximum contracts. Amerisourcebergen Corp.(world's largest pharmaceutical sourcing and distribution services companies) comes next, followed by Boeing(manufacturing rockets, aircrafts and satellites worldwide).
 
 #### Analysis 2:
