@@ -1,6 +1,6 @@
-##Final Submission
+## Final Submission
 In this submission, I have done analysis on the data downloded from US government's website (https://www.usaspending.gov/DownloadCenter/API/Pages/fpds.aspx) which tracks the money spent by its internal departments on the contracts given to outside vendors. The download was done with the help of website's API. There are 4 main folders:
-###1. FetchData:
+### 1. FetchData:
 This folder contains 2 iPython notebooks:
 i. US Spending - Fetch Data: This notebook contains code to make calls to API of US government website. This API provides us with multiple ways of making requests for data based on different parameters and the level of details we want. I have used the link 'https://www.usaspending.gov/fpds/fpds.php?detail=b&fiscal_year=2015&stateCode=TX&max_records=10' which has the following parameters:
 - detail=b
@@ -16,9 +16,9 @@ In this notebook there are 2 functions followed by the funtion call. The first f
 ii. ConvertXmlToDataFramePickle: Once the data was downloaded into a directory structure, I converted the data in XML files into a dataframe and then saved the dataframe as a '.pickle' file which could be easily used for further analysis without going over 1.3GB of data again and again. 
 Please Note: This pickle file has not been committed on GitHub due to size restrictions as Github only allows files of size upto 100MB. This size of this file was 405MB. In order to run the analysis again using this pickle file, you need to download it from here (...) and save it at this path in your system (...).
 
-###2. Data: This folder contains 2 folders for years 2016 and 2017. Each of these folders further contain 2 folders for states MA and PA which have all the XML files. 
+### 2. Data: This folder contains 2 folders for years 2016 and 2017. Each of these folders further contain 2 folders for states MA and PA which have all the XML files. 
 
-###3. Extra: This folder contains the US govt. website's data dictionary in the form of a pdf file (USAspending.govDataDictionary.pdf) which explains terminology used in the XML files in the form of tags.  
+### 3. Extra: This folder contains the US govt. website's data dictionary in the form of a pdf file (USAspending.govDataDictionary.pdf) which explains terminology used in the XML files in the form of tags.  
 
-###4. Analysis: This folder consists of 3 analysis done of the pickle file created in the above steps.
+### 4. Analysis: This folder consists of 3 analysis done of the pickle file created in the above steps.
 #### Analysis 1:
