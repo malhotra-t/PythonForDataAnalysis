@@ -60,9 +60,9 @@ This analyses the level of vendor competition in Govt. contracts and highlights 
 - C = Not Competed
 - B = Not Available for Competition
 - A = Full and Open Competition
-- CDO = Competitive Delivery Order
-![](Analysis/Analysis2/CompetitionOpennessDistribution.png)
+- CDO = Competitive Delivery Order<br>
+![](Analysis/Analysis2/CompetitionOpennessDistribution.png)<br>
 The plot shows that majority of govt. spending goes into such companies. Also, the word cloud shown below highlights the names of these companies.<br>
-![](Analysis/Analysis2/WordCloud.png)
+![](Analysis/Analysis2/WordCloud.png)<br>
 
 #### Analysis 3:
