@@ -1,5 +1,5 @@
-## Final Submission
-In this submission, I have done analysis on the data downloded from US government's website (https://www.usaspending.gov/DownloadCenter/API/Pages/fpds.aspx) which tracks the money spent by its internal departments on the contracts given to outside vendors. The download was done with the help of website's API. There are 4 main folders:
+## Final - Analysis of US Government Spending in Fiscal Years 2016 & 2017 for states MA and PA
+In this submission, I have done analysis on the data downloded from US government's website __(https://www.usaspending.gov/DownloadCenter/API/Pages/fpds.aspx)__ which tracks the money spent by its internal departments on the contracts given to outside vendors. The download was done with the help of website's API. There are 4 main folders:
 ### 1. FetchData:
 This folder contains 2 iPython notebooks:<br>
 #### i) US Spending - Fetch Data: 
