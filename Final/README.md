@@ -4,13 +4,13 @@ In this submission, I have done analysis on the data downloded from US governmen
 This folder contains 2 iPython notebooks:<br>
 #### i) US Spending - Fetch Data: 
 This notebook contains code to make calls to API of US government website. This API provides us with multiple ways of making requests for data based on different parameters and the level of details we want. I have used the link 'https://www.usaspending.gov/fpds/fpds.php?detail=b&fiscal_year=2015&stateCode=TX&max_records=10' which has the following parameters:
-- detail=b
+- detail=b: 
 This signifies that level of detail is 'basic'
-- fiscal_year=2015
+- fiscal_year=2015: 
 This takes the year for which we want the data. I have taken the data for 2016 & 2017.
-- stateCode=TX
+- stateCode=TX: 
 This takes as input the state code for which we want the data. I have requested the data for states MA and PA.
-- max_records=10
+- max_records=10: 
 This is the number of records per file. I set it to 100 per file.
 In this notebook there are 2 functions followed by the funtion call. The first function is to find out the total number of records for a particular set of parameters passed in the above link. The second function uses this total number of records to find out the number of files that will be downloaded by dividing it by 100(max_records). Using these functions iteratively I create a directory structure of the form 'year/stateCode/file.xml' to save the files for year 2016 & 2017 for states MA & PA.
 
